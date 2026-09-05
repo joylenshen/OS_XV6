@@ -1,0 +1,51 @@
+# 临时补丁/备份 - 不要上传
+backup/
+*.tmp
+*.bak
+
+# 构建产物（xv6-riscv/.gitignore 已覆盖，此处防御）
+*.o
+*.d
+*.asm
+*.sym
+*.img
+/kernel/kernel
+/mkfs/mkfs
+/user/usys.S
+
+# 大文件与课件
+*.pdf
+book.pdf
+xv6*.pdf
+
+# 测试日志
+logs/
+*.log
+
+# 实验报告与文档
+docs/
+预测的实验现象.md
+
+# 空实验目录
+lab/
+
+# IDE / 编辑器
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Windows
+Thumbs.db
+desktop.ini
+
+# 脚本（自动化脚本，答辩演示用，不上传）
+*.cmd
+run_*.sh
+_run_*.sh
+run_*.ps1
+
+# QEMU
+.gdbinit
+.gdbinit.tmpl
